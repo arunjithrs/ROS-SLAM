@@ -44,3 +44,28 @@ transforms:
 ### Generate frams
 
 ```rosrun tf2_tools view_frames.py```
+
+### run the frame using launch file
+create a package
+```
+cd catkin_ws/src ```
+catkin_create_pkg ros_slam_test rospy roscpp turtlesim 
+```
+
+create a file inside ros_slam_test src ``static_transform_publisher.launch`` with below content
+```
+<launch>
+    <node pkg="tf" type="static_transform_publisher" name="frame_a_to_frame_b" args="1 2 3 0.1 0.2 0.3 frame_a frame_b 10" />
+</launch>
+```
+
+give permiossion
+```
+chmod 777 static_transform_publisher.launch
+```
+
+
+
+
+
+
