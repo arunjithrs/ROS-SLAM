@@ -18,7 +18,6 @@
 ```rostopic echo /tf```
 
 ```transforms: 
-  - 
     header: 
       seq: 0
       stamp: 
