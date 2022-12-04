@@ -87,7 +87,7 @@ control the robot with teleop
 roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch 
 ```
 
-## generate Map
+## Generate Map
 Generates the explored map
 ```
 rosrun map_server map_saver -f ~/tb3_house_map
