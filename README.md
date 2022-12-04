@@ -108,3 +108,8 @@ export TURTLEBOT3_MODEL=waffle
 roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/arunjith/tb3_house_map.yaml
 ```
 
+## Navigation
+match the robot location with simuation using ``2D Pos Estimate`` by clicking and adjusting on rviz
+click on ``2D Nav`` and set the goal location by drawing on the map on rviz
+
+
