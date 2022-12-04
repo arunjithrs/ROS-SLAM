@@ -94,7 +94,7 @@ rosrun map_server map_saver -f ~/tb3_house_map
 ```
 
 
-## run the robot in generated map
+## Run the robot in generated map
 
 run gazebo simulation
 ```
@@ -110,6 +110,7 @@ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/aru
 
 ## Navigation
 match the robot location with simuation using ``2D Pos Estimate`` by clicking and adjusting on rviz
+
 click on ``2D Nav`` and set the goal location by drawing on the map on rviz
 
 
