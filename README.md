@@ -94,3 +94,17 @@ rosrun map_server map_saver -f ~/tb3_house_map
 ```
 
 
+## run the robot in generated map
+
+run gazebo simulation
+```
+export TURTLEBOT3_MODEL=waffle
+roslaunch turtlebot3_gazebo turtlebot3_house.launch 
+```
+
+launch raviz  with generated map file
+```
+export TURTLEBOT3_MODEL=waffle
+roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=/home/arunjith/tb3_house_map.yaml
+```
+
