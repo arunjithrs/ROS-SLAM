@@ -88,7 +88,7 @@ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 ## generate Map
-generates the explored map
+Generates the explored map
 ```
 rosrun map_server map_saver -f ~/tb3_house_map
 ```
