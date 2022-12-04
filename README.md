@@ -59,11 +59,33 @@ create a file inside ros_slam_test src ``static_transform_publisher.launch`` wit
 </launch>
 ```
 
-give permiossion
+give permission
 ```
 chmod 777 static_transform_publisher.launch
 ```
 
+run the script using roslaunch
+```
+roslaunch ros_slam_test static_transform_publisher.launch 
+```
+
+## Gazebo simulation
+```
+export TURTLEBOT3_MODEL=waffle
+roslaunch turtlebot3_gazebo turtlebot3_house.launch 
+```
+run SLAM Algoritham
+
+installl ros-melodic-slam-gmapping
+```
+sudo apt install ros-melodic-slam-gmapping
+roslaunch turtlebot3_slam turtlebot3_slam.launch slam_method:=gmapping
+```
+
+control the robot with teleop
+```
+roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch 
+```
 
 
 
