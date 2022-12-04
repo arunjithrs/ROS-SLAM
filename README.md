@@ -113,4 +113,17 @@ match the robot location with simuation using ``2D Pos Estimate`` by clicking an
 
 click on ``2D Nav`` and set the goal location by drawing on the map on rviz
 
+get current location  of robot on the map
+```
+rostopic echo amcl_pose
+```
 
+checking changes in initpos
+```
+rostopic echo initialpos
+```
+
+run the python script to move the robot to the goal location
+```
+rosrun ros_slam_test navigate_goal.py
+```
