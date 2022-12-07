@@ -24,6 +24,8 @@ nano ~/.bashrc
 ```
 
 Add this line at the bottom of the file:
+
+```
 export TURTLEBOT3_MODEL=burger
 
 ```
