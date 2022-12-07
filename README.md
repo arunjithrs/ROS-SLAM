@@ -5,10 +5,12 @@
 
 Install required packages for gazebo and turtlebot3_simulations
 
+```
 sudo apt-get install ros-noetic-move-base
 sudo apt-get install ros-noetic-amcl
 sudo apt-get install ros-noetic-map-server
 sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
+```
 
 
 ```
