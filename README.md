@@ -1,5 +1,43 @@
 # SLAM
 
+
+### Install  
+
+Install required packages for gazebo and turtlebot3_simulations
+
+sudo apt-get install ros-noetic-move-base
+sudo apt-get install ros-noetic-amcl
+sudo apt-get install ros-noetic-map-server
+sudo apt-get install ros-noetic-gazebo-ros-pkgs ros-noetic-gazebo-ros-control
+
+
+```
+cd ~/catkin_ws/src/
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+cd ~/catkin_ws && catkin_make
+```
+
+Add source variable in bashrc
+```
+nano ~/.bashrc
+```
+
+Add this line at the bottom of the file:
+export TURTLEBOT3_MODEL=burger
+
+```
+
+```
+cd ~/catkin_ws/src/
+git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+cd ~/catkin_ws && catkin_make
+```
+
+For installation reference: https://automaticaddison.com/how-to-launch-the-turtlebot3-simulation-with-ros/
+
+
+
 ### Static Transform Publisher
 
 ```rosrun tf static_transform_publisher 1 2 3 0.1 0.2 0.3 frame_a frame_b 10```
