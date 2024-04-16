@@ -135,6 +135,11 @@ Generates the explored map
 rosrun map_server map_saver -f ~/tb3_house_map
 ```
 
+for enabling navigation
+```
+sudo apt-get install ros-kinetic-dwa-local-planner
+```
+
 
 ## Run the robot in generated map
 
